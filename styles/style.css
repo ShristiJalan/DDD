@@ -58,6 +58,11 @@ nav ul li a {
   transition: 0.88s;
 }
 
+.container .content{
+  position: absolute;
+  top: 106%;
+}
+
 .toggle-button {
   position: absolute;
   top: 2rem;
