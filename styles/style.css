@@ -72,12 +72,12 @@ nav ul li a {
   transition: 0.88s;
 }
 
-.container .content{
+.container01 .content{
   position: absolute;
   top: 106%;
 }
 
-.container .vector img{
+.container01 .vector img{
   width: 1100px;
   height: 1200px;
   object-fit: contain;
@@ -105,7 +105,7 @@ nav ul li a {
   border-radius: 10px;
 }
 
-@media (max-width: 1020px) {
+/* @media (max-width: 1020px) {
   .toggle-button {
     display: flex;
   }
@@ -137,7 +137,7 @@ nav ul li a {
   .navbar-links.active {
     display: flex;
   }
-}
+} */
 
 .headings {
   font-family: "Open Sans";
