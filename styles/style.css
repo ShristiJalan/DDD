@@ -162,7 +162,7 @@ nav ul li a {
   font-weight: 500;
 }
 
-.container1{
+/* .container1{
   position: absolute;
   top: 900px;
   left:67px;
@@ -171,8 +171,8 @@ nav ul li a {
   justify-content:flex-start;
   align-items: center;
   flex-direction: column;
-  /* box-shadow: 0 50px 50px rgba(0,0,0,0.5),
-              0 0 0 100px rgba(0,0,0,0.1); */
+  box-shadow: 0 50px 50px rgba(0,0,0,0.5),
+              0 0 0 100px rgba(0,0,0,0.1); 
 
 }
 
@@ -186,9 +186,9 @@ nav ul li a {
   height: 100px;
   line-height: 100px;
   text-align: center;
-  /* background: #f44f9e; */
+  background: #f44f9e;
   margin: 0 15px;
   font-size: 3em;
   color: white;
   font-weight: 500;
-}
+} */
