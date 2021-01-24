@@ -13,7 +13,7 @@
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #2A1E70;
 }
 ::selection{
   background: rgb(40,30,112,0.3);
