@@ -1,0 +1,298 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+
+}
+/* ::-webkit-scrollbar {
+  width: 0px; 
+  background: transparent;
+} */
+/* Optional: show position indicator in red */
+/* ::-webkit-scrollbar-thumb {
+  background: #FF0000;
+} */
+
+body{
+    font-family: Open Sans;
+    background: url(../img/TOP_BACK.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  padding: 30px;
+  width: 200px;
+  margin-left: 58px;
+}
+
+nav {
+  background: transparent;
+  height: 80px;
+  width: 100%;
+}
+
+.navbar-links ul {
+  margin-right: 70px;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 20px;
+}
+
+.navbar-links.active {
+  background: #f44f9e;
+  transition: 0.88s;
+} */
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::selection{
+background: rgb(0,123,255,0.3);
+}
+.content{
+max-width: 1250px;
+margin: auto;
+padding: 0 30px;
+}
+.navbar{
+position: fixed;
+width: 90%;
+z-index: 2;
+padding: 25px 0;
+transition: all 0.3s ease;
+}
+.navbar.sticky{
+background: transparent;
+padding: 10px 0;
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.navbar .menu-list{
+display: inline-flex;
+}
+
+.menu-list li{
+list-style: none;
+}
+
+.navbar ul{
+  margin-right: 70px;
+  padding: 0;
+  display: flex
+}
+.menu-list li a{
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+margin-left: 45px;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+color: #F44F9E;
+}
+
+.icon{
+color: #fff;
+font-size: 20px;
+cursor: pointer;
+display: none;
+}
+.menu-list .cancel-btn{
+position: absolute;
+right: 30px;
+top: 20px;
+}
+@media (max-width: 1230px) {
+.content{
+  padding: 0 60px;
+}
+}
+@media (max-width: 1100px) {
+.content{
+  padding: 0 40px;
+}
+}
+@media (max-width: 900px) {
+.content{
+  padding: 0 30px;
+}
+}
+@media (max-width: 868px) {
+body.disabled{
+  overflow: hidden;
+}
+.icon{
+  display: block;
+}
+.icon.hide{
+  display: none;
+}
+.navbar .menu-list{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  max-width: 400px;
+  left: 100%;
+  top: 20px;
+  display: flex;
+  padding: 40px 0;
+  text-align: center;
+  background: #222;
+  transition: all 0.3s ease;
+}
+.navbar.show .menu-list{
+  left: 0%;
+}
+.navbar .menu-list li{
+  margin-top: 45px;
+}
+.navbar .menu-list li a{
+  font-size: 23px;
+  margin-left: -100%;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.navbar.show .menu-list li a{
+  margin-left: 0px;
+}
+}
+@media (max-width: 380px) {
+.navbar .logo a{
+  font-size: 27px;
+}
+}
+
+.container01 .content{
+  position: absolute;
+  top: 106%;
+}
+
+.container01 .vector img{
+  width: 1100px;
+  height: 1200px;
+  object-fit: contain;
+  position: absolute;
+  top: -35%;
+  left: 43%;
+  
+}
+
+.toggle-button {
+  position: absolute;
+  top: 2rem;
+  right: 2.25rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.headings {
+  font-family: "Open Sans";
+  color: white;
+  padding-top: 9rem;
+  padding-left: 5.25rem;
+}
+
+.headings p:nth-child(1) {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.headings p:nth-child(2) {
+  font-size: 6.25rem;
+  font-weight: 900;
+}
+
+.headings p:nth-child(3) {
+  padding-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* .container1{
+  position: absolute;
+  top: 900px;
+  left:67px;
+  opacity: 0.5;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 50px 50px rgba(0,0,0,0.5),
+              0 0 0 100px rgba(0,0,0,0.1); 
+
+}
+
+.countdown{
+  display: flex;
+}
+
+.countdown div{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: #f44f9e;
+  margin: 0 15px;
+  font-size: 3em;
+  color: white;
+  font-weight: 500;
+} */
+
+
+
+

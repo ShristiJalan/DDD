@@ -1,200 +1,152 @@
-* {
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
   margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-
-html {
-  overflow: scroll;
-  overflow-x: hidden;
-
-}
-::-webkit-scrollbar {
-  width: 0px;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
-}
-/* Optional: show position indicator in red */
-/* ::-webkit-scrollbar-thumb {
-  background: #FF0000;
-} */
-
-body{
-    font-family: Open Sans;
-    background: url(../img/TOP_BACK.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    overflow: hidden;
-    height: 100%;
-}
-
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav img {
-  padding: 30px;
-  width: 200px;
-  margin-left: 58px;
-}
-
-nav {
-  background: transparent;
-  height: 80px;
-  width: 100%;
-}
-
-.navbar-links ul {
-  margin-right: 70px;
   padding: 0;
-  display: flex;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
 }
-
-nav ul li a {
-  color: white;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 20px;
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
-
-.navbar-links.active {
-  background: #f44f9e;
-  transition: 0.88s;
+::-webkit-scrollbar-thumb {
+    background: #888;
 }
-
-.container01 .content{
-  position: absolute;
-  top: 106%;
+::selection{
+  background: rgb(0,123,255,0.3);
 }
-
-.container01 .vector img{
-  width: 1100px;
-  height: 1200px;
-  object-fit: contain;
-  position: absolute;
-  top: -35%;
-  left: 43%;
-  
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
 }
-
-.toggle-button {
-  position: absolute;
-  top: 2rem;
-  right: 2.25rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
+.navbar{
+  position: fixed;
   width: 100%;
-  background-color: white;
-  border-radius: 10px;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
 }
-
-/* @media (max-width: 1020px) {
-  .toggle-button {
-    display: flex;
-  }
-
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navbar-links {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .navbar-links li {
-    text-align: center;
-  }
-
-  .navbar-links li a {
-    padding: 0.5rem 1rem;
-  }
-
-  .navbar-links.active {
-    display: flex;
-  }
-} */
-
-.headings {
-  font-family: "Open Sans";
-  color: white;
-  padding-top: 9rem;
-  padding-left: 5.25rem;
+.navbar.sticky{
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
-
-.headings p:nth-child(1) {
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
-.headings p:nth-child(2) {
-  font-size: 6.25rem;
-  font-weight: 900;
-}
-
-.headings p:nth-child(3) {
-  padding-top: 1rem;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
-/* .container1{
-  position: absolute;
-  top: 900px;
-  left:67px;
-  opacity: 0.5;
+.navbar .content{
   display: flex;
-  justify-content:flex-start;
   align-items: center;
-  flex-direction: column;
-  box-shadow: 0 50px 50px rgba(0,0,0,0.5),
-              0 0 0 100px rgba(0,0,0,0.1); 
-
+  justify-content: space-between;
 }
-
-.countdown{
-  display: flex;
+.navbar .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
 }
-
-.countdown div{
-  position: relative;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  background: #f44f9e;
-  margin: 0 15px;
-  font-size: 3em;
-  color: white;
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 18px;
   font-weight: 500;
-} */
-
-
-
-
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+.banner{
+  background: url("TOP_BACK.png") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  padding: 30px 0;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
+}
