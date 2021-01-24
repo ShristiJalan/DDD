@@ -32,50 +32,6 @@ body{
     height: 100%;
 }
 
-/* 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav img {
-  padding: 30px;
-  width: 200px;
-  margin-left: 58px;
-}
-
-nav {
-  background: transparent;
-  height: 80px;
-  width: 100%;
-}
-
-.navbar-links ul {
-  margin-right: 70px;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: white;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 20px;
-}
-
-.navbar-links.active {
-  background: #f44f9e;
-  transition: 0.88s;
-} */
-
-
 .headings {
   font-family: "Open Sans";
   color: white;
