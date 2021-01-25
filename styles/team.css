@@ -170,3 +170,25 @@ section P{
     font-weight: 600;
     font-family: "open sans";
 }
+
+.floating-butn{
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #F44F9D;
+    display:  flex;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    transition: backgroud 0.25s;
+    
+}
+
+.floating-butn:active{
+    background: #FD747D;
+}
