@@ -11,7 +11,35 @@ body{
      flex-wrap: wrap;
      min-height: 100vh;
      background-color: #2a1e70;
+     font-family: "open sans";
 }
+
+section{
+  position: relative;
+  background-color: #2a1e70;
+  width: 100%;
+}
+
+section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(#f00,#f0f);
+  clip-path: circle(30% at right 70%);
+}
+
+section::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(#f00,#f0f);
+  clip-path: circle(30% at 10% 10%);
+}
+
 
 .teamTitle{
     padding: 7rem;
@@ -32,6 +60,7 @@ body{
     text-align: center;
     font-weight: lighter;
 }
+
 
 section P{
     color: #fff;
@@ -60,100 +89,110 @@ section P{
     
 }
 
+/* ************************************************** */
 .floating-butn:active{
     background: #FD747D;
 }
 
-#schedule {
-    padding: 60px 0 60px 0;
+.event-container {
+  font-family: "Roboto", sans-serif;
+  max-width: 800px;
+  padding-top: 3rem;
+  margin: 0 auto;
+}
+
+.event-container h3.year {
+  font-size: 40px;
+  text-align: center;
+  color: #FD747D;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.event-container .event {
+  /* box-shadow: 0 4px 16px -8px rgba(255, 255, 255, 0.205); */
+  display: flex;
+  border-radius: 8px;
+  margin: 32px 0;
+  box-shadow: 0 15px 35 px rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.05)
+}
+
+.event .event-left {
+  background: #fd747d4f;
+  min-width: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  padding: 8px 48px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.event .event-left .date {
+  font-size: 56px;
+}
+
+.event .event-left .month {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.event .event-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.event .event-right h3.event-title {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: #eee;
+  text-transform: uppercase;
+}
+
+.event .event-right .event-timing {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 8px;
+  border-radius: 16px;
+  background-color: #FD747D;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.event .event-right .event-description{
+  color: #fff;
+  font-weight: 200;
+}
+
+.event .event-right .event-timing img {
+  height: 20px;
+  padding-right: 8px;
+}
+
+@media (max-width: 550px) {
+  .event {
+    flex-direction: column;
   }
-  
-  #schedule .nav-tabs {
-    text-align: center;
-    margin: auto;
-    display: block;
-    border-bottom: 0;
-    margin-bottom: 30px;
+
+  .event .event-left {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
   }
-  
-  #schedule .nav-tabs li {
+
+  .event .event-left .event-date .date,
+  .event .event-left .event-date .month {
     display: inline-block;
-    margin-bottom: 0;
+    font-size: 24px;
   }
-  
-  #schedule .nav-tabs a {
-    border: none;
-    border-radius: 50px;
-    font-weight: 600;
-    background-color: #0e1b4d;
-    color: #fff;
-    padding: 10px 100px;
+
+  .event .event-left .event-date {
+    padding: 10px 0;
   }
-  
-  #schedule .nav-tabs a.active {
-    background-color: #f82249;
-    color: #fff;
-  }
-  
-  #schedule .sub-heading {
-    text-align: center;
-    font-size: 18px;
-    font-style: italic;
-    margin: 0 auto 30px auto;
-  }
-  
-  #schedule .tab-pane {
-    transition: ease-in-out .2s;
-  }
-  
-  #schedule .schedule-item {
-    border-bottom: 1px solid #cad4f6;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    transition: background-color ease-in-out 0.3s;
-  }
-  
-  #schedule .schedule-item:hover {
-    background-color: #fff;
-  }
-  
-  #schedule .schedule-item time {
-    padding-bottom: 5px;
-    display: inline-block;
-  }
-  
-  #schedule .schedule-item .speaker {
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-    border-radius: 50%;
-    float: left;
-    margin: 0 10px 10px 0;
-  }
-  
-  #schedule .schedule-item .speaker img {
-    height: 100%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    margin-left: 50%;
-    transition: all ease-in-out 0.3s;
-  }
-  
-  #schedule .schedule-item h4 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
-  }
-  
-  #schedule .schedule-item h4 span {
-    font-style: italic;
-    color: #19328e;
-    font-weight: normal;
-    font-size: 16px;
-  }
-  
-  #schedule .schedule-item p {
-    font-style: italic;
-    color: #152b79;
-    margin-bottom: 0;
-  }
+}
