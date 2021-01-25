@@ -162,10 +162,15 @@ html{
   position: absolute;
   top: 100%;
   left: 0%;
+  height: 100px;
 }
 
 .content .rocket{
   position: absolute;
   top: 60%;
   left: 45%;
+}
+
+.heading{
+  display: block;
 }
