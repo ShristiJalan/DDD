@@ -75,7 +75,7 @@ html{
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .about{
   padding: 30px 0;
@@ -152,11 +152,6 @@ html{
     margin-left: 0px;
   }
 }
-@media (max-width: 380px) {
-  .navbar .logo a{
-    font-size: 27px;
-  }
-}
 
 .content .Bg{
   position: absolute;
@@ -169,8 +164,11 @@ html{
   position: absolute;
   top: 60%;
   left: 45%;
+  display: flex;
 }
 
-.heading{
-  display: block;
+@media screen and (max-width:1150px) {
+  .content .rocket {
+    display: none;
+  }
 }
