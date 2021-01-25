@@ -10,6 +10,17 @@ html{
   overflow-x: hidden;
 }
 
+body{
+  font-family: Open Sans;
+  background: url(../img/TOP_BACK.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -70,13 +81,41 @@ html{
 .menu-list li a:hover{
   color: #F44F9E;
 }
-.banner{
+/* .banner{
   background: url("../img/TOP_BACK.png") no-repeat;
   height: 100vh;
   background-size: cover;
   background-position: center;
-  /* background-attachment: fixed; */
+ background-attachment: fixed;
+ } */
+
+ .heading{
+  /* position:fixed; */
+  margin-top: 12rem;
+  width:100%;
+  z-index:100;
+  margin-left: 15vw;
+  color: #fff;
+  font-family: "open sans";
+ }
+
+ .heading .child1{
+  font-weight: 400;
+  font-stretch:extra-expanded;
+  font-size: 1vw;
+ }
+
+.heading .child2{
+   font-size: 6vw;
 }
+
+.heading .child3{
+  font-weight: 500;
+  font-stretch:extra-expanded;
+  font-size: 1.2vw;
+ }
+
+
 .about{
   padding: 30px 0;
 }
