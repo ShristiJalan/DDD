@@ -1367,7 +1367,7 @@ form label {
 .feature-left .feature-copy h3 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #5d5d5d;
+  color: #b6b6b6;
   margin-bottom: 10px;
 }
 
@@ -1380,7 +1380,7 @@ form label {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0);
 }
 #fh5co-started .fh5co-heading h2 {
   color: #fff;
