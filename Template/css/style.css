@@ -58,12 +58,12 @@ p {
   margin-bottom: 20px;
 }
 
-/* h1, h2, h3, h4, h5, h6, figure {
+h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-family: "open Sans";
   font-weight: 400;
   margin: 0 0 20px 0;
-} */
+}
 
 ::-webkit-selection {
   color: #fff;
@@ -133,9 +133,9 @@ p {
 .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
   color: #F44F9E;
 }
-/* .fh5co-nav ul li.has-dropdown {
+.fh5co-nav ul li.has-dropdown {
   position: relative;
-} */
+}
 /* .fh5co-nav ul li.has-dropdown .dropdown {
   width: 130px;
   -webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
