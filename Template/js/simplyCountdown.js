@@ -1,4 +1,5 @@
 
+/*global window, document*/
 (function (exports) {
     'use strict';
 
@@ -8,7 +9,11 @@
         createCountdownElt,
         simplyCountdown;
 
-    
+    /**
+     * Function that merge user parameters with defaults one.
+     * @param out
+     * @returns {*|{}}
+     */
     extend = function (out) {
         var i,
             obj,
@@ -33,6 +38,14 @@
 
         return out;
     };
+
+    /**
+     * Function that create a countdown section
+     * @param countdown
+     * @param parameters
+     * @param typeClass
+     * @returns {{full: (*|Element), amount: (*|Element), word: (*|Element)}}
+     */
     createCountdownElt = function (countdown, parameters, typeClass) {
         var innerSectionTag,
             sectionTag,
@@ -61,6 +74,13 @@
             word: wordTag
         };
     };
+
+    /**
+     * Function that create full countdown DOM elements calling createCountdownElt
+     * @param parameters
+     * @param countdown
+     * @returns {{days: (*|Element), hours: (*|Element), minutes: (*|Element), seconds: (*|Element)}}
+     */
     createElements = function (parameters, countdown) {
         var spanTag;
 
@@ -78,12 +98,16 @@
         return spanTag;
     };
 
-  
+    /**
+     * simplyCountdown, create and display the coundtown.
+     * @param elt
+     * @param args (parameters)
+     */
     simplyCountdown = function (elt, args) {
         var parameters = extend({
                 year: 2021,
-                month: 3,
-                day: 3,
+                month: 6,
+                day: 28,
                 hours: 0,
                 minutes: 0,
                 seconds: 0,
@@ -129,7 +153,7 @@
         );
 
         if (parameters.enableUtc) {
-            TargetDate = new Date(
+            targetDate = new Date(
                 targetTmpDate.getUTCFullYear(),
                 targetTmpDate.getUTCMonth(),
                 targetTmpDate.getUTCDate(),
@@ -226,7 +250,7 @@
                 }
             };
 
-            
+            // Refresh immediately to prevent a Flash of Unstyled Content
             refresh();
             interval = window.setInterval(refresh, parameters.refresh);
         });
@@ -235,7 +259,7 @@
     exports.simplyCountdown = simplyCountdown;
 }(window));
 
-
+/*global $, jQuery, simplyCountdown*/
 if (window.jQuery) {
     (function ($, simplyCountdown) {
         'use strict';
