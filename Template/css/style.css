@@ -1020,8 +1020,8 @@ form label {
 #fh5co-started,
 #fh5co-footer,
 #fh5co-event,
-#fh5co-couple-story,
-#fh5co-couple,
+#fh5co-story,
+#fh5co-about,
 #fh5co-gallery,
 .fh5co-section {
   padding: 7em 0;
@@ -1034,8 +1034,8 @@ form label {
   #fh5co-started,
   #fh5co-footer,
   #fh5co-event,
-  #fh5co-couple-story,
-  #fh5co-couple,
+  #fh5co-story,
+  #fh5co-about,
   #fh5co-gallery,
   .fh5co-section {
     padding: 3em 0;
@@ -1046,13 +1046,13 @@ form label {
   background: rgba(0, 0, 0, 0.04);
 }
 
-.couple-wrap {
+.about-wrap {
   width: 90%;
   margin: 0 auto;
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  .couple-wrap {
+  .about-wrap {
     width: 100%;
   }
 }
@@ -1081,21 +1081,21 @@ form label {
   }
 }
 
-.couple-half {
+.about-half {
   width: 50%;
   float: left;
 }
 @media screen and (max-width: 768px) {
-  .couple-half {
+  .about-half {
     width: 100%;
   }
 }
-.couple-half h3 {
+.about-half h3 {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #F14E95;
   font-size: 30px;
 } */
-/* .couple-half .groom, .couple-half .bride {
+/* .about-half .groom, .about-half .bride {
   float: left;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1104,7 +1104,7 @@ form label {
   width: 150px;
   height: 150px;
 }
-.couple-half .groom img, .couple-half .bride img {
+.about-half .groom img, .about-half .bride img {
   width: 150px;
   height: 150px;
   -webkit-border-radius: 50%;
@@ -1113,42 +1113,42 @@ form label {
   border-radius: 50%;
 } */
 /* @media screen and (max-width: 480px) {
-  .couple-half .groom, .couple-half .bride {
+  .about-half .groom, .about-half .bride {
     width: 100%;
     height: 140px;
   }
-  .couple-half .groom img, .couple-half .bride img {
+  .about-half .groom img, .about-half .bride img {
     width: 120px;
     height: 120px;
     margin: 0 auto;
   }
 }
-.couple-half .groom {
+.about-half .groom {
   float: right;
   margin-right: 5px;
 }
-.couple-half .bride {
+.about-half .bride {
   float: left;
   margin-left: 5px;
 }
-.couple-half .desc-groom {
+.about-half .desc-groom {
   padding-right: 180px;
   text-align: right;
 }
-.couple-half .desc-bride {
+.about-half .desc-bride {
   padding-left: 180px;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
-  .couple-half .groom, .couple-half .bride {
+  .about-half .groom, .about-half .bride {
     margin-left: 0;
     margin-right: 0;
   }
-  .couple-half .desc-groom {
+  .about-half .desc-groom {
     padding-right: 0;
     text-align: center;
   }
-  .couple-half .desc-bride {
+  .about-half .desc-bride {
     padding-left: 0;
     text-align: center;
   }
