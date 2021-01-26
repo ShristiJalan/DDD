@@ -1222,7 +1222,7 @@ form label {
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
-  color: #828282;
+  color: #c4c2c2;
 }
 .fh5co-heading span {
   text-transform: uppercase;
@@ -1231,6 +1231,18 @@ form label {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.301);
 }
+.fh5co-heading .rocket{
+  /* left: 5000px;
+  width: 100%;
+  height: auto; */
+  margin-top: 7rem;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
 
 #fh5co-testimonial .wrap-testimony {
   position: relative;
