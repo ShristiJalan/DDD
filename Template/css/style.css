@@ -222,6 +222,8 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff !important;
 }
 
+
+
 #fh5co-counter,
 #fh5co-event,
 .fh5co-bg {
@@ -302,6 +304,17 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   width: 100%;
 }
+
+/* .fh5co-event .overlay{
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+} */
+
 .fh5co-cover .overlay {
   z-index: 0;
   position: absolute;
@@ -385,7 +398,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0);
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter,
@@ -1389,7 +1402,10 @@ form label {
 #fh5co-started .form-control:focus {
   background: rgba(255, 255, 255, 0.3);
 }
+
+
 #fh5co-started .btn {
+  align-items: center;
   height: 54px;
   border: none !important;
   background: #F14E95;
@@ -1400,6 +1416,7 @@ form label {
   padding-left: 50px;
   padding-right: 50px;
 }
+
 #fh5co-started .form-inline .form-group {
   width: 100% !important;
   margin-bottom: 10px;
