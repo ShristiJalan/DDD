@@ -975,6 +975,12 @@ form label {
   padding: 7em 0;
   clear: both;
   background-color: #2a1e70;
+  
+}
+
+#fh5co-about p{
+  display: flex;
+  justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
   #fh5co-testimonial,
